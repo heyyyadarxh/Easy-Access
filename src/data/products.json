@@ -1,0 +1,1202 @@
+[
+  {
+    "id": "1",
+    "name": "Basmati Rice (5kg)",
+    "brandName": "Daawat",
+    "category": "Kirana (Staples)",
+    "price": 450,
+    "image": "https://images.unsplash.com/photo-1586201375761-83865001e31c?w=500&q=80",
+    "isMostSelling": false,
+    "inStock": true
+  },
+  {
+    "id": "2",
+    "name": "Sona Masoori Rice (10kg)",
+    "brandName": "India Gate",
+    "category": "Kirana (Staples)",
+    "price": 550,
+    "image": "https://images.unsplash.com/photo-1586201375761-83865001e31c?w=500&q=80",
+    "isMostSelling": true,
+    "inStock": true
+  },
+  {
+    "id": "3",
+    "name": "Toor Daal (1kg)",
+    "brandName": "Tata Sampann",
+    "category": "Kirana (Staples)",
+    "price": 160,
+    "image": "https://images.unsplash.com/photo-1585996884635-f09c645ba364?w=500&q=80",
+    "isMostSelling": false,
+    "inStock": true
+  },
+  {
+    "id": "4",
+    "name": "Moong Daal (1kg)",
+    "brandName": "Tata Sampann",
+    "category": "Kirana (Staples)",
+    "price": 140,
+    "image": "https://images.unsplash.com/photo-1585996884635-f09c645ba364?w=500&q=80",
+    "isMostSelling": false,
+    "inStock": true
+  },
+  {
+    "id": "5",
+    "name": "Chana Daal (1kg)",
+    "brandName": "Fortune",
+    "category": "Kirana (Staples)",
+    "price": 120,
+    "image": "https://images.unsplash.com/photo-1585996884635-f09c645ba364?w=500&q=80",
+    "isMostSelling": true,
+    "inStock": true
+  },
+  {
+    "id": "6",
+    "name": "Aashirvaad Atta (5kg)",
+    "brandName": "Aashirvaad",
+    "category": "Kirana (Staples)",
+    "price": 210,
+    "image": "https://images.unsplash.com/photo-1509440159596-0249088772ff?w=500&q=80",
+    "isMostSelling": false,
+    "inStock": true
+  },
+  {
+    "id": "7",
+    "name": "Besan (1kg)",
+    "brandName": "Fortune",
+    "category": "Kirana (Staples)",
+    "price": 110,
+    "image": "https://images.unsplash.com/photo-1509440159596-0249088772ff?w=500&q=80",
+    "isMostSelling": true,
+    "inStock": true
+  },
+  {
+    "id": "8",
+    "name": "Tata Salt (1kg)",
+    "brandName": "Tata",
+    "category": "Kirana (Staples)",
+    "price": 25,
+    "image": "https://images.unsplash.com/photo-1627483262112-039e9a0a0f16?w=500&q=80",
+    "isMostSelling": true,
+    "inStock": true
+  },
+  {
+    "id": "9",
+    "name": "Sugar (1kg)",
+    "brandName": "Madhur",
+    "category": "Kirana (Staples)",
+    "price": 45,
+    "image": "https://images.unsplash.com/photo-1581441363689-1f3c3c414635?w=500&q=80",
+    "isMostSelling": false,
+    "inStock": true
+  },
+  {
+    "id": "10",
+    "name": "Jaggery (500g)",
+    "brandName": "Organic Tattva",
+    "category": "Kirana (Staples)",
+    "price": 60,
+    "image": "https://images.unsplash.com/photo-1581441363689-1f3c3c414635?w=500&q=80",
+    "isMostSelling": false,
+    "inStock": true
+  },
+  {
+    "id": "11",
+    "name": "Kacchi Ghani Mustard Oil (1L)",
+    "brandName": "Fortune",
+    "category": "Edible Oils",
+    "price": 165,
+    "image": "https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?w=500&q=80",
+    "isMostSelling": false,
+    "inStock": true
+  },
+  {
+    "id": "12",
+    "name": "Refined Sunflower Oil (1L)",
+    "brandName": "Fortune",
+    "category": "Edible Oils",
+    "price": 145,
+    "image": "https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?w=500&q=80",
+    "isMostSelling": true,
+    "inStock": true
+  },
+  {
+    "id": "13",
+    "name": "Palm Oil (1L)",
+    "brandName": "Ruchi Gold",
+    "category": "Edible Oils",
+    "price": 120,
+    "image": "https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?w=500&q=80",
+    "isMostSelling": false,
+    "inStock": true
+  },
+  {
+    "id": "14",
+    "name": "Groundnut Oil (1L)",
+    "brandName": "Dhara",
+    "category": "Edible Oils",
+    "price": 180,
+    "image": "https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?w=500&q=80",
+    "isMostSelling": true,
+    "inStock": true
+  },
+  {
+    "id": "15",
+    "name": "Olive Oil (500ml)",
+    "brandName": "Figaro",
+    "category": "Edible Oils",
+    "price": 350,
+    "image": "https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?w=500&q=80",
+    "isMostSelling": false,
+    "inStock": true
+  },
+  {
+    "id": "16",
+    "name": "Almond Hair Oil (200ml)",
+    "brandName": "Bajaj",
+    "category": "Hair Care",
+    "price": 150,
+    "image": "https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?w=500&q=80",
+    "isMostSelling": true,
+    "inStock": true
+  },
+  {
+    "id": "17",
+    "name": "Kesh Kanti Hair Oil (120ml)",
+    "brandName": "Patanjali",
+    "category": "Hair Care",
+    "price": 130,
+    "image": "https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?w=500&q=80",
+    "isMostSelling": true,
+    "inStock": true
+  },
+  {
+    "id": "18",
+    "name": "Nihar Naturals Coconut Oil (400ml)",
+    "brandName": "Nihar",
+    "category": "Hair Care",
+    "price": 120,
+    "image": "https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?w=500&q=80",
+    "isMostSelling": false,
+    "inStock": true
+  },
+  {
+    "id": "19",
+    "name": "Parachute Coconut Oil (500ml)",
+    "brandName": "Parachute",
+    "category": "Hair Care",
+    "price": 195,
+    "image": "https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?w=500&q=80",
+    "isMostSelling": false,
+    "inStock": true
+  },
+  {
+    "id": "20",
+    "name": "Amla Hair Oil (300ml)",
+    "brandName": "Dabur",
+    "category": "Hair Care",
+    "price": 140,
+    "image": "https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?w=500&q=80",
+    "isMostSelling": false,
+    "inStock": true
+  },
+  {
+    "id": "21",
+    "name": "Navratna Ayurvedic Oil (200ml)",
+    "brandName": "Emami",
+    "category": "Hair Care",
+    "price": 160,
+    "image": "https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?w=500&q=80",
+    "isMostSelling": false,
+    "inStock": true
+  },
+  {
+    "id": "22",
+    "name": "Dettol Original Soap (125g)",
+    "brandName": "Dettol",
+    "category": "Soaps & Body Wash",
+    "price": 35,
+    "image": "https://images.unsplash.com/photo-1600857062241-98e5dba7f214?w=500&q=80",
+    "isMostSelling": false,
+    "inStock": true
+  },
+  {
+    "id": "23",
+    "name": "Dove Cream Beauty Bathing Bar (100g)",
+    "brandName": "Dove",
+    "category": "Soaps & Body Wash",
+    "price": 50,
+    "image": "https://images.unsplash.com/photo-1600857062241-98e5dba7f214?w=500&q=80",
+    "isMostSelling": false,
+    "inStock": true
+  },
+  {
+    "id": "24",
+    "name": "Lifebuoy Total Soap (125g)",
+    "brandName": "Lifebuoy",
+    "category": "Soaps & Body Wash",
+    "price": 30,
+    "image": "https://images.unsplash.com/photo-1600857062241-98e5dba7f214?w=500&q=80",
+    "isMostSelling": true,
+    "inStock": true
+  },
+  {
+    "id": "25",
+    "name": "Pears Pure & Gentle Soap (125g)",
+    "brandName": "Pears",
+    "category": "Soaps & Body Wash",
+    "price": 55,
+    "image": "https://images.unsplash.com/photo-1600857062241-98e5dba7f214?w=500&q=80",
+    "isMostSelling": false,
+    "inStock": true
+  },
+  {
+    "id": "26",
+    "name": "Cinthol Cool Soap (100g)",
+    "brandName": "Godrej",
+    "category": "Soaps & Body Wash",
+    "price": 40,
+    "image": "https://images.unsplash.com/photo-1600857062241-98e5dba7f214?w=500&q=80",
+    "isMostSelling": false,
+    "inStock": true
+  },
+  {
+    "id": "27",
+    "name": "Santoor Sandal & Turmeric Soap (150g)",
+    "brandName": "Santoor",
+    "category": "Soaps & Body Wash",
+    "price": 45,
+    "image": "https://images.unsplash.com/photo-1600857062241-98e5dba7f214?w=500&q=80",
+    "isMostSelling": false,
+    "inStock": true
+  },
+  {
+    "id": "28",
+    "name": "Lux Velvet Touch Soap (100g)",
+    "brandName": "Lux",
+    "category": "Soaps & Body Wash",
+    "price": 35,
+    "image": "https://images.unsplash.com/photo-1600857062241-98e5dba7f214?w=500&q=80",
+    "isMostSelling": false,
+    "inStock": true
+  },
+  {
+    "id": "29",
+    "name": "Patanjali Haldi Chandan Soap (150g)",
+    "brandName": "Patanjali",
+    "category": "Soaps & Body Wash",
+    "price": 25,
+    "image": "https://images.unsplash.com/photo-1600857062241-98e5dba7f214?w=500&q=80",
+    "isMostSelling": false,
+    "inStock": true
+  },
+  {
+    "id": "30",
+    "name": "Ball Pen Set (Pack of 5)",
+    "brandName": "Cello",
+    "category": "Stationery",
+    "price": 25,
+    "image": "https://images.unsplash.com/photo-1585336261022-680e295ce3fe?w=500&q=80",
+    "isMostSelling": false,
+    "inStock": true
+  },
+  {
+    "id": "31",
+    "name": "Gel Pen (Blue)",
+    "brandName": "Reynolds",
+    "category": "Stationery",
+    "price": 10,
+    "image": "https://images.unsplash.com/photo-1585336261022-680e295ce3fe?w=500&q=80",
+    "isMostSelling": true,
+    "inStock": true
+  },
+  {
+    "id": "32",
+    "name": "Pencils (Box of 10)",
+    "brandName": "Apsara",
+    "category": "Stationery",
+    "price": 50,
+    "image": "https://images.unsplash.com/photo-1585336261022-680e295ce3fe?w=500&q=80",
+    "isMostSelling": false,
+    "inStock": true
+  },
+  {
+    "id": "33",
+    "name": "Erasers (Pack of 5)",
+    "brandName": "Natraj",
+    "category": "Stationery",
+    "price": 15,
+    "image": "https://images.unsplash.com/photo-1585336261022-680e295ce3fe?w=500&q=80",
+    "isMostSelling": false,
+    "inStock": true
+  },
+  {
+    "id": "34",
+    "name": "Notebook (100 pages)",
+    "brandName": "Classmate",
+    "category": "Stationery",
+    "price": 40,
+    "image": "https://images.unsplash.com/photo-1531346878377-a541ba67a5b3?w=500&q=80",
+    "isMostSelling": false,
+    "inStock": true
+  },
+  {
+    "id": "35",
+    "name": "Garam Masala (100g)",
+    "brandName": "Everest",
+    "category": "Spices & Masalas",
+    "price": 75,
+    "image": "https://images.unsplash.com/photo-1596040033229-a9821ebd058d?w=500&q=80",
+    "isMostSelling": true,
+    "inStock": true
+  },
+  {
+    "id": "36",
+    "name": "Turmeric Powder (200g)",
+    "brandName": "MDH",
+    "category": "Spices & Masalas",
+    "price": 55,
+    "image": "https://images.unsplash.com/photo-1596040033229-a9821ebd058d?w=500&q=80",
+    "isMostSelling": false,
+    "inStock": true
+  },
+  {
+    "id": "37",
+    "name": "Red Chilli Powder (200g)",
+    "brandName": "MDH",
+    "category": "Spices & Masalas",
+    "price": 80,
+    "image": "https://images.unsplash.com/photo-1596040033229-a9821ebd058d?w=500&q=80",
+    "isMostSelling": false,
+    "inStock": true
+  },
+  {
+    "id": "38",
+    "name": "Coriander Powder (200g)",
+    "brandName": "Catch",
+    "category": "Spices & Masalas",
+    "price": 60,
+    "image": "https://images.unsplash.com/photo-1596040033229-a9821ebd058d?w=500&q=80",
+    "isMostSelling": false,
+    "inStock": true
+  },
+  {
+    "id": "39",
+    "name": "Cumin Seeds/Jeera (100g)",
+    "brandName": "Catch",
+    "category": "Spices & Masalas",
+    "price": 65,
+    "image": "https://images.unsplash.com/photo-1596040033229-a9821ebd058d?w=500&q=80",
+    "isMostSelling": false,
+    "inStock": true
+  },
+  {
+    "id": "40",
+    "name": "Parle-G Gold (1kg)",
+    "brandName": "Parle",
+    "category": "Snacks & Biscuits",
+    "price": 90,
+    "image": "https://images.unsplash.com/photo-1599508704512-2f19efd1e35f?w=500&q=80",
+    "isMostSelling": false,
+    "inStock": true
+  },
+  {
+    "id": "41",
+    "name": "Good Day Cashew Cookies (250g)",
+    "brandName": "Britannia",
+    "category": "Snacks & Biscuits",
+    "price": 30,
+    "image": "https://images.unsplash.com/photo-1599508704512-2f19efd1e35f?w=500&q=80",
+    "isMostSelling": false,
+    "inStock": true
+  },
+  {
+    "id": "42",
+    "name": "Marie Gold (250g)",
+    "brandName": "Britannia",
+    "category": "Snacks & Biscuits",
+    "price": 25,
+    "image": "https://images.unsplash.com/photo-1599508704512-2f19efd1e35f?w=500&q=80",
+    "isMostSelling": true,
+    "inStock": true
+  },
+  {
+    "id": "43",
+    "name": "Bhujia Sev (400g)",
+    "brandName": "Haldiram's",
+    "category": "Snacks & Biscuits",
+    "price": 100,
+    "image": "https://images.unsplash.com/photo-1599508704512-2f19efd1e35f?w=500&q=80",
+    "isMostSelling": false,
+    "inStock": true
+  },
+  {
+    "id": "44",
+    "name": "Aloo Bhujia (400g)",
+    "brandName": "Haldiram's",
+    "category": "Snacks & Biscuits",
+    "price": 100,
+    "image": "https://images.unsplash.com/photo-1599508704512-2f19efd1e35f?w=500&q=80",
+    "isMostSelling": false,
+    "inStock": true
+  },
+  {
+    "id": "45",
+    "name": "Maggi 2-Minute Noodles (4-pack)",
+    "brandName": "Nestle",
+    "category": "Snacks & Biscuits",
+    "price": 56,
+    "image": "https://images.unsplash.com/photo-1612929633738-8fe44f7ec841?w=500&q=80",
+    "isMostSelling": true,
+    "inStock": true
+  },
+  {
+    "id": "46",
+    "name": "Lays Classic Salted (50g)",
+    "brandName": "Lays",
+    "category": "Snacks & Biscuits",
+    "price": 20,
+    "image": "https://images.unsplash.com/photo-1566478989037-e924e50b0a1a?w=500&q=80",
+    "isMostSelling": false,
+    "inStock": true
+  },
+  {
+    "id": "47",
+    "name": "Taj Mahal Tea (500g)",
+    "brandName": "Brooke Bond",
+    "category": "Drinks & Beverages",
+    "price": 280,
+    "image": "https://images.unsplash.com/photo-1544787219-7f47ccb76574?w=500&q=80",
+    "isMostSelling": true,
+    "inStock": true
+  },
+  {
+    "id": "48",
+    "name": "Red Label Tea (500g)",
+    "brandName": "Brooke Bond",
+    "category": "Drinks & Beverages",
+    "price": 220,
+    "image": "https://images.unsplash.com/photo-1544787219-7f47ccb76574?w=500&q=80",
+    "isMostSelling": false,
+    "inStock": true
+  },
+  {
+    "id": "49",
+    "name": "Nescafe Classic Coffee (50g)",
+    "brandName": "Nescafe",
+    "category": "Drinks & Beverages",
+    "price": 150,
+    "image": "https://images.unsplash.com/photo-1559525839-b184a4d698c7?w=500&q=80",
+    "isMostSelling": false,
+    "inStock": true
+  },
+  {
+    "id": "50",
+    "name": "Bru Instant Coffee (50g)",
+    "brandName": "Bru",
+    "category": "Drinks & Beverages",
+    "price": 95,
+    "image": "https://images.unsplash.com/photo-1559525839-b184a4d698c7?w=500&q=80",
+    "isMostSelling": false,
+    "inStock": true
+  },
+  {
+    "id": "51",
+    "name": "Coca Cola (2L)",
+    "brandName": "Coca Cola",
+    "category": "Drinks & Beverages",
+    "price": 95,
+    "image": "https://images.unsplash.com/photo-1554866585-cd94860890b7?w=500&q=80",
+    "isMostSelling": false,
+    "inStock": true
+  },
+  {
+    "id": "52",
+    "name": "Thums Up (2L)",
+    "brandName": "Thums Up",
+    "category": "Drinks & Beverages",
+    "price": 95,
+    "image": "https://images.unsplash.com/photo-1554866585-cd94860890b7?w=500&q=80",
+    "isMostSelling": false,
+    "inStock": true
+  },
+  {
+    "id": "53",
+    "name": "Frooti (1.2L)",
+    "brandName": "Parle",
+    "category": "Drinks & Beverages",
+    "price": 65,
+    "image": "https://images.unsplash.com/photo-1622483767028-3f66f32aef97?w=500&q=80",
+    "isMostSelling": false,
+    "inStock": true
+  },
+  {
+    "id": "54",
+    "name": "Maaza (1.2L)",
+    "brandName": "Coca Cola",
+    "category": "Drinks & Beverages",
+    "price": 70,
+    "image": "https://images.unsplash.com/photo-1622483767028-3f66f32aef97?w=500&q=80",
+    "isMostSelling": true,
+    "inStock": true
+  },
+  {
+    "id": "55",
+    "name": "Colgate Strong Teeth (200g)",
+    "brandName": "Colgate",
+    "category": "Oral Care",
+    "price": 110,
+    "image": "https://images.unsplash.com/photo-1600857062241-98e5dba7f214?w=500&q=80",
+    "isMostSelling": true,
+    "inStock": true
+  },
+  {
+    "id": "56",
+    "name": "Pepsodent Germi Check (150g)",
+    "brandName": "Pepsodent",
+    "category": "Oral Care",
+    "price": 90,
+    "image": "https://images.unsplash.com/photo-1600857062241-98e5dba7f214?w=500&q=80",
+    "isMostSelling": false,
+    "inStock": true
+  },
+  {
+    "id": "57",
+    "name": "Close Up Ever Fresh (150g)",
+    "brandName": "Close Up",
+    "category": "Oral Care",
+    "price": 95,
+    "image": "https://images.unsplash.com/photo-1600857062241-98e5dba7f214?w=500&q=80",
+    "isMostSelling": false,
+    "inStock": true
+  },
+  {
+    "id": "58",
+    "name": "Sensodyne Fresh Mint (75g)",
+    "brandName": "Sensodyne",
+    "category": "Oral Care",
+    "price": 130,
+    "image": "https://images.unsplash.com/photo-1600857062241-98e5dba7f214?w=500&q=80",
+    "isMostSelling": false,
+    "inStock": true
+  },
+  {
+    "id": "59",
+    "name": "Toothbrush (Pack of 4)",
+    "brandName": "Oral-B",
+    "category": "Oral Care",
+    "price": 80,
+    "image": "https://images.unsplash.com/photo-1600857062241-98e5dba7f214?w=500&q=80",
+    "isMostSelling": true,
+    "inStock": true
+  },
+  {
+    "id": "60",
+    "name": "Surf Excel Matic (1kg)",
+    "brandName": "Surf Excel",
+    "category": "Cleaning & Household",
+    "price": 220,
+    "image": "https://images.unsplash.com/photo-1585553616435-2dc0a54e271d?w=500&q=80",
+    "isMostSelling": true,
+    "inStock": true
+  },
+  {
+    "id": "61",
+    "name": "Tide Plus (1kg)",
+    "brandName": "Tide",
+    "category": "Cleaning & Household",
+    "price": 120,
+    "image": "https://images.unsplash.com/photo-1585553616435-2dc0a54e271d?w=500&q=80",
+    "isMostSelling": false,
+    "inStock": true
+  },
+  {
+    "id": "62",
+    "name": "Vim Dishwash Liquid (500ml)",
+    "brandName": "Vim",
+    "category": "Cleaning & Household",
+    "price": 105,
+    "image": "https://images.unsplash.com/photo-1585553616435-2dc0a54e271d?w=500&q=80",
+    "isMostSelling": false,
+    "inStock": true
+  },
+  {
+    "id": "63",
+    "name": "Lizol Floor Cleaner (500ml)",
+    "brandName": "Lizol",
+    "category": "Cleaning & Household",
+    "price": 100,
+    "image": "https://images.unsplash.com/photo-1585553616435-2dc0a54e271d?w=500&q=80",
+    "isMostSelling": false,
+    "inStock": true
+  },
+  {
+    "id": "64",
+    "name": "Harpic Toilet Cleaner (500ml)",
+    "brandName": "Harpic",
+    "category": "Cleaning & Household",
+    "price": 95,
+    "image": "https://images.unsplash.com/photo-1585553616435-2dc0a54e271d?w=500&q=80",
+    "isMostSelling": false,
+    "inStock": true
+  },
+  {
+    "id": "65",
+    "name": "Comfort Fabric Conditioner (200ml)",
+    "brandName": "Comfort",
+    "category": "Cleaning & Household",
+    "price": 55,
+    "image": "https://images.unsplash.com/photo-1585553616435-2dc0a54e271d?w=500&q=80",
+    "isMostSelling": false,
+    "inStock": true
+  },
+  {
+    "id": "66",
+    "name": "Cycle Agarbatti (100g)",
+    "brandName": "Cycle",
+    "category": "Pooja Needs",
+    "price": 50,
+    "image": "https://images.unsplash.com/photo-1600000000000-000000000000?w=500&q=80",
+    "isMostSelling": false,
+    "inStock": true
+  },
+  {
+    "id": "67",
+    "name": "Mangaldeep Agarbatti",
+    "brandName": "ITC",
+    "category": "Pooja Needs",
+    "price": 45,
+    "image": "https://images.unsplash.com/photo-1600000000000-000000000000?w=500&q=80",
+    "isMostSelling": false,
+    "inStock": true
+  },
+  {
+    "id": "68",
+    "name": "Camphor/Kapur (50g)",
+    "brandName": "Patanjali",
+    "category": "Pooja Needs",
+    "price": 40,
+    "image": "https://images.unsplash.com/photo-1600000000000-000000000000?w=500&q=80",
+    "isMostSelling": false,
+    "inStock": true
+  },
+  {
+    "id": "69",
+    "name": "Matchbox (Bundle of 10)",
+    "brandName": "Homelites",
+    "category": "Pooja Needs",
+    "price": 15,
+    "image": "https://images.unsplash.com/photo-1600000000000-000000000000?w=500&q=80",
+    "isMostSelling": false,
+    "inStock": true
+  },
+  {
+    "id": "70",
+    "name": "Ghee for Diya (200ml)",
+    "brandName": "Patanjali",
+    "category": "Pooja Needs",
+    "price": 60,
+    "image": "https://images.unsplash.com/photo-1600000000000-000000000000?w=500&q=80",
+    "isMostSelling": false,
+    "inStock": true
+  },
+  {
+    "id": "71",
+    "name": "Almonds/Badam (500g)",
+    "brandName": "Happilo",
+    "category": "Dry Fruits",
+    "price": 450,
+    "image": "https://images.unsplash.com/photo-1508061253366-f7da158b6d46?w=500&q=80",
+    "isMostSelling": false,
+    "inStock": true
+  },
+  {
+    "id": "72",
+    "name": "Cashews/Kaju (500g)",
+    "brandName": "Happilo",
+    "category": "Dry Fruits",
+    "price": 550,
+    "image": "https://images.unsplash.com/photo-1508061253366-f7da158b6d46?w=500&q=80",
+    "isMostSelling": false,
+    "inStock": true
+  },
+  {
+    "id": "73",
+    "name": "Raisins/Kishmish (500g)",
+    "brandName": "Tulsi",
+    "category": "Dry Fruits",
+    "price": 250,
+    "image": "https://images.unsplash.com/photo-1508061253366-f7da158b6d46?w=500&q=80",
+    "isMostSelling": false,
+    "inStock": true
+  },
+  {
+    "id": "74",
+    "name": "Walnuts/Akhrot (250g)",
+    "brandName": "Nutraj",
+    "category": "Dry Fruits",
+    "price": 300,
+    "image": "https://images.unsplash.com/photo-1508061253366-f7da158b6d46?w=500&q=80",
+    "isMostSelling": false,
+    "inStock": true
+  },
+  {
+    "id": "75",
+    "name": "Pistachios/Pista (250g)",
+    "brandName": "Happilo",
+    "category": "Dry Fruits",
+    "price": 400,
+    "image": "https://images.unsplash.com/photo-1508061253366-f7da158b6d46?w=500&q=80",
+    "isMostSelling": false,
+    "inStock": true
+  },
+  {
+    "id": "76",
+    "name": "Amul Butter (100g)",
+    "brandName": "Amul",
+    "category": "Dairy & Everyday",
+    "price": 58,
+    "image": "https://images.unsplash.com/photo-1588195538326-c5b1e9f6f5b4?w=500&q=80",
+    "isMostSelling": false,
+    "inStock": true
+  },
+  {
+    "id": "77",
+    "name": "Amul Cheese Cubes (200g)",
+    "brandName": "Amul",
+    "category": "Dairy & Everyday",
+    "price": 130,
+    "image": "https://images.unsplash.com/photo-1588195538326-c5b1e9f6f5b4?w=500&q=80",
+    "isMostSelling": false,
+    "inStock": true
+  },
+  {
+    "id": "78",
+    "name": "Mother Dairy Paneer (200g)",
+    "brandName": "Mother Dairy",
+    "category": "Dairy & Everyday",
+    "price": 90,
+    "image": "https://images.unsplash.com/photo-1588195538326-c5b1e9f6f5b4?w=500&q=80",
+    "isMostSelling": false,
+    "inStock": true
+  },
+  {
+    "id": "79",
+    "name": "Britannia White Bread",
+    "brandName": "Britannia",
+    "category": "Dairy & Everyday",
+    "price": 45,
+    "image": "https://images.unsplash.com/photo-1588195538326-c5b1e9f6f5b4?w=500&q=80",
+    "isMostSelling": false,
+    "inStock": true
+  },
+  {
+    "id": "80",
+    "name": "Eggs (Tray of 30)",
+    "brandName": "Local",
+    "category": "Dairy & Everyday",
+    "price": 180,
+    "image": "https://images.unsplash.com/photo-1588195538326-c5b1e9f6f5b4?w=500&q=80",
+    "isMostSelling": false,
+    "inStock": true
+  },
+  {
+    "id": "81",
+    "name": "Bournvita (500g)",
+    "brandName": "Cadbury",
+    "category": "Health Drinks & Beverages",
+    "price": 210,
+    "image": "https://images.unsplash.com/photo-1554866585-cd94860890b7?w=500&q=80",
+    "isMostSelling": true,
+    "inStock": true
+  },
+  {
+    "id": "82",
+    "name": "Horlicks Classic Malt (500g)",
+    "brandName": "Horlicks",
+    "category": "Health Drinks & Beverages",
+    "price": 230,
+    "image": "https://images.unsplash.com/photo-1554866585-cd94860890b7?w=500&q=80",
+    "isMostSelling": false,
+    "inStock": true
+  },
+  {
+    "id": "83",
+    "name": "Complan Kesar Badam (500g)",
+    "brandName": "Complan",
+    "category": "Health Drinks & Beverages",
+    "price": 260,
+    "image": "https://images.unsplash.com/photo-1554866585-cd94860890b7?w=500&q=80",
+    "isMostSelling": true,
+    "inStock": true
+  },
+  {
+    "id": "84",
+    "name": "Rooh Afza Syrup (750ml)",
+    "brandName": "Hamdard",
+    "category": "Health Drinks & Beverages",
+    "price": 175,
+    "image": "https://images.unsplash.com/photo-1554866585-cd94860890b7?w=500&q=80",
+    "isMostSelling": false,
+    "inStock": true
+  },
+  {
+    "id": "85",
+    "name": "Tang Orange (500g)",
+    "brandName": "Mondelez",
+    "category": "Health Drinks & Beverages",
+    "price": 160,
+    "image": "https://images.unsplash.com/photo-1554866585-cd94860890b7?w=500&q=80",
+    "isMostSelling": false,
+    "inStock": true
+  },
+  {
+    "id": "86",
+    "name": "Kissan Fresh Tomato Ketchup (1kg)",
+    "brandName": "Kissan",
+    "category": "Condiments & Sauces",
+    "price": 140,
+    "image": "https://images.unsplash.com/photo-1528750717929-32abb73d3bd9?w=500&q=80",
+    "isMostSelling": true,
+    "inStock": true
+  },
+  {
+    "id": "87",
+    "name": "Maggi Masala-ae-Magic (Pack of 12)",
+    "brandName": "Nestle",
+    "category": "Condiments & Sauces",
+    "price": 60,
+    "image": "https://images.unsplash.com/photo-1528750717929-32abb73d3bd9?w=500&q=80",
+    "isMostSelling": false,
+    "inStock": true
+  },
+  {
+    "id": "88",
+    "name": "Ching's Dark Soy Sauce (200g)",
+    "brandName": "Ching's Secret",
+    "category": "Condiments & Sauces",
+    "price": 55,
+    "image": "https://images.unsplash.com/photo-1528750717929-32abb73d3bd9?w=500&q=80",
+    "isMostSelling": false,
+    "inStock": true
+  },
+  {
+    "id": "89",
+    "name": "FunFoods Eggless Mayonnaise (250g)",
+    "brandName": "Dr. Oetker",
+    "category": "Condiments & Sauces",
+    "price": 95,
+    "image": "https://images.unsplash.com/photo-1528750717929-32abb73d3bd9?w=500&q=80",
+    "isMostSelling": false,
+    "inStock": true
+  },
+  {
+    "id": "90",
+    "name": "Patanjali Mixed Pickle (500g)",
+    "brandName": "Patanjali",
+    "category": "Condiments & Sauces",
+    "price": 85,
+    "image": "https://images.unsplash.com/photo-1528750717929-32abb73d3bd9?w=500&q=80",
+    "isMostSelling": false,
+    "inStock": true
+  },
+  {
+    "id": "91",
+    "name": "Mother's Recipe Mango Pickle (500g)",
+    "brandName": "Mother's Recipe",
+    "category": "Condiments & Sauces",
+    "price": 90,
+    "image": "https://images.unsplash.com/photo-1528750717929-32abb73d3bd9?w=500&q=80",
+    "isMostSelling": false,
+    "inStock": true
+  },
+  {
+    "id": "92",
+    "name": "Kurkure Masala Munch (100g)",
+    "brandName": "Kurkure",
+    "category": "Snacks & Namkeen",
+    "price": 20,
+    "image": "https://images.unsplash.com/photo-1599508704512-2f19efd1e35f?w=500&q=80",
+    "isMostSelling": false,
+    "inStock": true
+  },
+  {
+    "id": "93",
+    "name": "Bingo Mad Angles (80g)",
+    "brandName": "Bingo",
+    "category": "Snacks & Namkeen",
+    "price": 20,
+    "image": "https://images.unsplash.com/photo-1599508704512-2f19efd1e35f?w=500&q=80",
+    "isMostSelling": false,
+    "inStock": true
+  },
+  {
+    "id": "94",
+    "name": "Haldiram's Khatta Meetha (200g)",
+    "brandName": "Haldiram's",
+    "category": "Snacks & Namkeen",
+    "price": 50,
+    "image": "https://images.unsplash.com/photo-1599508704512-2f19efd1e35f?w=500&q=80",
+    "isMostSelling": false,
+    "inStock": true
+  },
+  {
+    "id": "95",
+    "name": "Haldiram's Moong Dal (200g)",
+    "brandName": "Haldiram's",
+    "category": "Snacks & Namkeen",
+    "price": 55,
+    "image": "https://images.unsplash.com/photo-1599508704512-2f19efd1e35f?w=500&q=80",
+    "isMostSelling": false,
+    "inStock": true
+  },
+  {
+    "id": "96",
+    "name": "Bikaji Bikaneri Bhujia (400g)",
+    "brandName": "Bikaji",
+    "category": "Snacks & Namkeen",
+    "price": 110,
+    "image": "https://images.unsplash.com/photo-1599508704512-2f19efd1e35f?w=500&q=80",
+    "isMostSelling": false,
+    "inStock": true
+  },
+  {
+    "id": "97",
+    "name": "Lays Cream & Onion (50g)",
+    "brandName": "Lays",
+    "category": "Snacks & Namkeen",
+    "price": 20,
+    "image": "https://images.unsplash.com/photo-1566478989037-e924e50b0a1a?w=500&q=80",
+    "isMostSelling": false,
+    "inStock": true
+  },
+  {
+    "id": "98",
+    "name": "Fair & Lovely Advanced (50g)",
+    "brandName": "Glow & Lovely",
+    "category": "Personal Care",
+    "price": 110,
+    "image": "https://images.unsplash.com/photo-1556228578-0d85b1a4d571?w=500&q=80",
+    "isMostSelling": false,
+    "inStock": true
+  },
+  {
+    "id": "99",
+    "name": "Pond's Dreamflower Talc (100g)",
+    "brandName": "Ponds",
+    "category": "Personal Care",
+    "price": 90,
+    "image": "https://images.unsplash.com/photo-1556228578-0d85b1a4d571?w=500&q=80",
+    "isMostSelling": false,
+    "inStock": true
+  },
+  {
+    "id": "100",
+    "name": "Himalaya Purifying Neem Face Wash (100ml)",
+    "brandName": "Himalaya",
+    "category": "Personal Care",
+    "price": 140,
+    "image": "https://images.unsplash.com/photo-1556228578-0d85b1a4d571?w=500&q=80",
+    "isMostSelling": false,
+    "inStock": true
+  },
+  {
+    "id": "101",
+    "name": "Gillette Presto Razor (Pack of 5)",
+    "brandName": "Gillette",
+    "category": "Personal Care",
+    "price": 120,
+    "image": "https://images.unsplash.com/photo-1556228578-0d85b1a4d571?w=500&q=80",
+    "isMostSelling": true,
+    "inStock": true
+  },
+  {
+    "id": "102",
+    "name": "Old Spice After Shave (100ml)",
+    "brandName": "Old Spice",
+    "category": "Personal Care",
+    "price": 250,
+    "image": "https://images.unsplash.com/photo-1556228578-0d85b1a4d571?w=500&q=80",
+    "isMostSelling": false,
+    "inStock": true
+  },
+  {
+    "id": "103",
+    "name": "Vaseline Petroleum Jelly (50g)",
+    "brandName": "Vaseline",
+    "category": "Personal Care",
+    "price": 75,
+    "image": "https://images.unsplash.com/photo-1556228578-0d85b1a4d571?w=500&q=80",
+    "isMostSelling": false,
+    "inStock": true
+  },
+  {
+    "id": "104",
+    "name": "Pampers Active Baby Diapers (Size M, 30 pcs)",
+    "brandName": "Pampers",
+    "category": "Baby Care",
+    "price": 450,
+    "image": "https://images.unsplash.com/photo-1555252333-9f8e92e65df9?w=500&q=80",
+    "isMostSelling": false,
+    "inStock": true
+  },
+  {
+    "id": "105",
+    "name": "Johnson's Baby Soap (100g)",
+    "brandName": "Johnson's",
+    "category": "Baby Care",
+    "price": 65,
+    "image": "https://images.unsplash.com/photo-1555252333-9f8e92e65df9?w=500&q=80",
+    "isMostSelling": true,
+    "inStock": true
+  },
+  {
+    "id": "106",
+    "name": "Johnson's Baby Powder (200g)",
+    "brandName": "Johnson's",
+    "category": "Baby Care",
+    "price": 140,
+    "image": "https://images.unsplash.com/photo-1555252333-9f8e92e65df9?w=500&q=80",
+    "isMostSelling": false,
+    "inStock": true
+  },
+  {
+    "id": "107",
+    "name": "Himalaya Baby Massage Oil (200ml)",
+    "brandName": "Himalaya",
+    "category": "Baby Care",
+    "price": 180,
+    "image": "https://images.unsplash.com/photo-1555252333-9f8e92e65df9?w=500&q=80",
+    "isMostSelling": false,
+    "inStock": true
+  },
+  {
+    "id": "108",
+    "name": "Cerelac Wheat Apple (300g)",
+    "brandName": "Nestle",
+    "category": "Baby Care",
+    "price": 250,
+    "image": "https://images.unsplash.com/photo-1555252333-9f8e92e65df9?w=500&q=80",
+    "isMostSelling": false,
+    "inStock": true
+  },
+  {
+    "id": "109",
+    "name": "Mortein Mosquito Repellent Refill",
+    "brandName": "Mortein",
+    "category": "Household Cleaning",
+    "price": 80,
+    "image": "https://images.unsplash.com/photo-1584820927498-cafe2c12b7f7?w=500&q=80",
+    "isMostSelling": false,
+    "inStock": true
+  },
+  {
+    "id": "110",
+    "name": "All Out Ultra Refill",
+    "brandName": "All Out",
+    "category": "Household Cleaning",
+    "price": 85,
+    "image": "https://images.unsplash.com/photo-1584820927498-cafe2c12b7f7?w=500&q=80",
+    "isMostSelling": false,
+    "inStock": true
+  },
+  {
+    "id": "111",
+    "name": "Hit Black Insect Killer (400ml)",
+    "brandName": "Hit",
+    "category": "Household Cleaning",
+    "price": 210,
+    "image": "https://images.unsplash.com/photo-1584820927498-cafe2c12b7f7?w=500&q=80",
+    "isMostSelling": false,
+    "inStock": true
+  },
+  {
+    "id": "112",
+    "name": "Odonil Room Freshener (50g)",
+    "brandName": "Odonil",
+    "category": "Household Cleaning",
+    "price": 50,
+    "image": "https://images.unsplash.com/photo-1584820927498-cafe2c12b7f7?w=500&q=80",
+    "isMostSelling": false,
+    "inStock": true
+  },
+  {
+    "id": "113",
+    "name": "Scotch Brite Scrub Pad (Pack of 3)",
+    "brandName": "Scotch Brite",
+    "category": "Household Cleaning",
+    "price": 45,
+    "image": "https://images.unsplash.com/photo-1584820927498-cafe2c12b7f7?w=500&q=80",
+    "isMostSelling": false,
+    "inStock": true
+  },
+  {
+    "id": "114",
+    "name": "Colin Glass Cleaner (500ml)",
+    "brandName": "Colin",
+    "category": "Household Cleaning",
+    "price": 100,
+    "image": "https://images.unsplash.com/photo-1584820927498-cafe2c12b7f7?w=500&q=80",
+    "isMostSelling": false,
+    "inStock": true
+  },
+  {
+    "id": "115",
+    "name": "Urad Daal (1kg)",
+    "brandName": "Tata Sampann",
+    "category": "Kirana (Staples)",
+    "price": 150,
+    "image": "https://images.unsplash.com/photo-1585996884635-f09c645ba364?w=500&q=80",
+    "isMostSelling": false,
+    "inStock": true
+  },
+  {
+    "id": "116",
+    "name": "Rajma Chitra (500g)",
+    "brandName": "Rajdhani",
+    "category": "Kirana (Staples)",
+    "price": 110,
+    "image": "https://images.unsplash.com/photo-1585996884635-f09c645ba364?w=500&q=80",
+    "isMostSelling": false,
+    "inStock": true
+  },
+  {
+    "id": "117",
+    "name": "Kabuli Chana (500g)",
+    "brandName": "Rajdhani",
+    "category": "Kirana (Staples)",
+    "price": 105,
+    "image": "https://images.unsplash.com/photo-1585996884635-f09c645ba364?w=500&q=80",
+    "isMostSelling": false,
+    "inStock": true
+  },
+  {
+    "id": "118",
+    "name": "Idli Rice (5kg)",
+    "brandName": "India Gate",
+    "category": "Kirana (Staples)",
+    "price": 300,
+    "image": "https://images.unsplash.com/photo-1586201375761-83865001e31c?w=500&q=80",
+    "isMostSelling": false,
+    "inStock": true
+  },
+  {
+    "id": "119",
+    "name": "Suji / Semolina (500g)",
+    "brandName": "Rajdhani",
+    "category": "Kirana (Staples)",
+    "price": 45,
+    "image": "https://images.unsplash.com/photo-1509440159596-0249088772ff?w=500&q=80",
+    "isMostSelling": false,
+    "inStock": true
+  },
+  {
+    "id": "120",
+    "name": "Maida (1kg)",
+    "brandName": "Rajdhani",
+    "category": "Kirana (Staples)",
+    "price": 60,
+    "image": "https://images.unsplash.com/photo-1509440159596-0249088772ff?w=500&q=80",
+    "isMostSelling": true,
+    "inStock": true
+  }
+]
