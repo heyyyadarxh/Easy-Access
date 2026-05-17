@@ -2,7 +2,7 @@ import fs from 'fs/promises';
 import path from 'path';
 import { NextResponse } from 'next/server';
 import { db } from '../../../lib/firebase';
-import { doc, setDoc } from 'firebase/firestore';
+import { doc, setDoc } from 'firebase/firestore/lite';
 
 export async function GET() {
   try {
