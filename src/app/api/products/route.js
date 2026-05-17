@@ -35,6 +35,7 @@ export async function POST(request) {
     
     return NextResponse.json({ success: true, product: newProduct });
   } catch (error) {
-    return NextResponse.json({ error: 'Failed to update products' }, { status: 500 });
+    console.error("Error updating products:", error);
+    return NextResponse.json({ error: 'Failed to update products', details: error.message }, { status: 500 });
   }
 }

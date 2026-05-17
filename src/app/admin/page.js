@@ -58,10 +58,11 @@ export default function AdminPage() {
         setEditingProduct(null);
         fetchProducts(); // Refresh list
       } else {
-        alert("Failed to save");
+        const errData = await res.json();
+        alert(`Failed to save: ${errData.details || errData.error || 'Unknown error'}`);
       }
     } catch (error) {
-      alert("Error saving");
+      alert(`Error saving: ${error.message}`);
     }
   };
 
@@ -72,7 +73,7 @@ export default function AdminPage() {
         <form onSubmit={handleLogin} style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
           <input
             type="password"
-            placeholder="Enter admin password (admin123)"
+            placeholder="Enter admin password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
             style={{ padding: '12px', borderRadius: '8px', border: '1px solid var(--card-border)', background: 'rgba(255,255,255,0.1)', color: 'white' }}
