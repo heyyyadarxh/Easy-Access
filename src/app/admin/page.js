@@ -76,7 +76,7 @@ export default function AdminPage() {
         body: JSON.stringify({ image: fileOrUrl, fileName }),
       });
       const data = await res.json();
-      if (data.success) {
+      if (res.ok && data.success) {
         setEditingProduct((prev) => ({
           ...prev,
           name: data.product.name || prev.name,
@@ -89,7 +89,7 @@ export default function AdminPage() {
         }));
         alert(`✨ Gemini AI detected the product!\nProduct: ${data.product.name}\nBrand: ${data.product.brandName}\nConfidence: ${Math.round(data.confidence * 100)}%`);
       } else {
-        alert("AI Detection failed: " + data.error);
+        alert(`AI Detection failed: ${data.details || data.error || data.message || 'Unknown server error'}`);
       }
     } catch (err) {
       alert("Error calling AI service: " + err.message);
