@@ -87,7 +87,7 @@ export default function AdminPage() {
           inStock: data.product.inStock ?? prev.inStock,
           isMostSelling: data.product.isMostSelling ?? prev.isMostSelling,
         }));
-        alert(`✨ AI Fetched Details from Google Vision & Shopping!\nProduct: ${data.product.name}\nConfidence: ${data.confidence * 100}%`);
+        alert(`✨ Gemini AI detected the product!\nProduct: ${data.product.name}\nBrand: ${data.product.brandName}\nConfidence: ${Math.round(data.confidence * 100)}%`);
       } else {
         alert("AI Detection failed: " + data.error);
       }
@@ -102,9 +102,17 @@ export default function AdminPage() {
     const file = e.target.files?.[0];
     if (!file) return;
 
-    const fileUrl = URL.createObjectURL(file);
-    setEditingProduct((prev) => ({ ...prev, image: fileUrl }));
-    handleAiDetect(fileUrl, file.name);
+    // Create a local preview URL for the image field
+    const previewUrl = URL.createObjectURL(file);
+    setEditingProduct((prev) => ({ ...prev, image: previewUrl }));
+
+    // Convert to base64 so the server-side Gemini API can read the actual pixels
+    const reader = new FileReader();
+    reader.onload = (evt) => {
+      const base64DataUrl = evt.target.result; // "data:image/jpeg;base64,..."
+      handleAiDetect(base64DataUrl, file.name);
+    };
+    reader.readAsDataURL(file);
   };
 
   if (!isLoggedIn) {
@@ -210,7 +218,7 @@ export default function AdminPage() {
                     borderRadius: '50%',
                     animation: 'spin 1s linear infinite'
                   }} />
-                  Scanning product via Google AI...
+                  Scanning with Gemini AI...
                 </div>
               )}
             </div>

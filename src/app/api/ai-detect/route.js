@@ -1,66 +1,159 @@
 import { NextResponse } from 'next/server';
 
-// Realistic product database for simulated AI Vision & Google Shopping search matching
-const MOCK_AI_DATABASE = [
-  { keywords: ['rice', 'basmati', 'daawat'], name: 'Basmati Rice Premium (5kg)', brandName: 'Daawat', category: 'Kirana (Staples)', price: 450, image: 'https://images.unsplash.com/photo-1586201375761-83865001e31c?w=500&q=80' },
-  { keywords: ['daal', 'toor', 'dal', 'pulse'], name: 'Toor Daal (1kg)', brandName: 'Tata Sampann', category: 'Kirana (Staples)', price: 160, image: 'https://images.unsplash.com/photo-1585996884635-f09c645ba364?w=500&q=80' },
-  { keywords: ['oil', 'mustard', 'fortune', 'sunflower'], name: 'Fortune Refined Sunflower Oil (1L)', brandName: 'Fortune', category: 'Edible Oils', price: 145, image: 'https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?w=500&q=80' },
-  { keywords: ['tea', 'taj', 'mahal', 'chai'], name: 'Taj Mahal Tea (500g)', brandName: 'Brooke Bond', category: 'Drinks & Beverages', price: 280, image: 'https://images.unsplash.com/photo-1544787219-7f47ccb76574?w=500&q=80' },
-  { keywords: ['coffee', 'nescafe', 'bru'], name: 'Nescafe Classic Coffee (50g)', brandName: 'Nescafe', category: 'Drinks & Beverages', price: 150, image: 'https://images.unsplash.com/photo-1559525839-b184a4d698c7?w=500&q=80' },
-  { keywords: ['soap', 'dettol', 'dove', 'lifebuoy'], name: 'Dove Cream Beauty Bathing Bar (100g)', brandName: 'Dove', category: 'Soaps & Body Wash', price: 50, image: 'https://images.unsplash.com/photo-1600857062241-98e5dba7f214?w=500&q=80' },
-  { keywords: ['biscuit', 'parle', 'good day', 'cookie'], name: 'Good Day Cashew Cookies (250g)', brandName: 'Britannia', category: 'Snacks & Biscuits', price: 30, image: 'https://images.unsplash.com/photo-1599508704512-2f19efd1e35f?w=500&q=80' },
-  { keywords: ['maggi', 'noodle'], name: 'Maggi 2-Minute Noodles (4-pack)', brandName: 'Nestle', category: 'Snacks & Biscuits', price: 56, image: 'https://images.unsplash.com/photo-1612929633738-8fe44f7ec841?w=500&q=80' },
-  { keywords: ['cola', 'thums up', 'coke', 'pepsi', 'drink'], name: 'Thums Up Soft Drink (2L)', brandName: 'Thums Up', category: 'Drinks & Beverages', price: 95, image: 'https://images.unsplash.com/photo-1554866585-cd94860890b7?w=500&q=80' },
-];
+const GEMINI_API_KEY = process.env.GEMINI_API_KEY;
+const GEMINI_API_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${GEMINI_API_KEY}`;
 
-const DEFAULT_PRODUCT = {
-  name: 'Organic Honey Premium (500g)',
-  brandName: 'Patanjali',
-  category: 'Kirana (Staples)',
-  price: 199,
-  image: 'https://images.unsplash.com/photo-1587049352847-4a222e784d38?w=500&q=80'
-};
+// Category list matching Ray General Store categories
+const CATEGORY_LIST = [
+  'Kirana (Staples)', 'Edible Oils', 'Drinks & Beverages', 'Snacks & Biscuits',
+  'Soaps & Body Wash', 'Shampoo & Hair Care', 'Dairy & Eggs', 'Packaged Foods',
+  'Spices & Masala', 'Cleaning & Household', 'Personal Care', 'Chocolates & Sweets',
+  'Frozen Foods', 'Bread & Bakery', 'Baby Products', 'Other'
+];
 
 export async function POST(request) {
   try {
-    const { image, fileName } = await request.json();
-    
-    // Simulate AI Vision processing time
-    await new Promise((resolve) => setTimeout(resolve, 1500));
+    const body = await request.json();
+    const { image, fileName } = body;
 
-    const searchStr = `${image || ''} ${fileName || ''}`.toLowerCase();
+    if (!GEMINI_API_KEY) {
+      return NextResponse.json({ error: 'Gemini API key not configured.' }, { status: 500 });
+    }
 
-    let detectedProduct = DEFAULT_PRODUCT;
+    if (!image) {
+      return NextResponse.json({ error: 'No image provided.' }, { status: 400 });
+    }
 
-    for (const item of MOCK_AI_DATABASE) {
-      if (item.keywords.some((kw) => searchStr.includes(kw))) {
-        detectedProduct = {
-          name: item.name,
-          brandName: item.brandName,
-          category: item.category,
-          price: item.price,
-          image: image && image.startsWith('http') ? image : item.image,
-        };
-        break;
+    // Build the image part for Gemini
+    let imagePart;
+
+    if (image.startsWith('data:')) {
+      // Base64 data URL from file upload
+      const matches = image.match(/^data:([^;]+);base64,(.+)$/);
+      if (!matches) {
+        return NextResponse.json({ error: 'Invalid base64 image format.' }, { status: 400 });
       }
+      imagePart = {
+        inlineData: {
+          mimeType: matches[1],
+          data: matches[2],
+        },
+      };
+    } else if (image.startsWith('http')) {
+      // URL — fetch and convert to base64
+      const imageResponse = await fetch(image);
+      if (!imageResponse.ok) {
+        return NextResponse.json({ error: 'Could not fetch image from URL.' }, { status: 400 });
+      }
+      const imageBuffer = await imageResponse.arrayBuffer();
+      const base64 = Buffer.from(imageBuffer).toString('base64');
+      const contentType = imageResponse.headers.get('content-type') || 'image/jpeg';
+      imagePart = {
+        inlineData: {
+          mimeType: contentType,
+          data: base64,
+        },
+      };
+    } else {
+      return NextResponse.json({ error: 'Image must be a base64 data URL or HTTP URL.' }, { status: 400 });
     }
 
-    if (detectedProduct === DEFAULT_PRODUCT && image && image.startsWith('http')) {
-      detectedProduct.image = image;
+    const prompt = `You are a smart product recognition AI for an Indian grocery/general store called "Ray General Store".
+
+Analyze this image carefully and identify the product shown.
+
+Return ONLY a valid JSON object (no markdown, no explanation, just raw JSON) with these exact fields:
+{
+  "name": "Full product name with size/quantity if visible (e.g. 'Maggi 2-Minute Noodles (70g)')",
+  "brandName": "Brand or manufacturer name",
+  "category": "One of: ${CATEGORY_LIST.join(', ')}",
+  "price": <estimated retail price in Indian Rupees as a number, no currency symbol>,
+  "confidence": <0.0 to 1.0 how confident you are>,
+  "detected": true
+}
+
+If you cannot identify any grocery/consumer product in the image, return:
+{"detected": false, "reason": "brief reason"}
+
+Rules:
+- Price should be typical Indian retail MRP for this product
+- Category must be one from the provided list
+- Do NOT include markdown code fences
+- Do NOT add any text before or after the JSON`;
+
+    const geminiResponse = await fetch(GEMINI_API_URL, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        contents: [
+          {
+            parts: [
+              { text: prompt },
+              imagePart,
+            ],
+          },
+        ],
+        generationConfig: {
+          temperature: 0.1,
+          topK: 1,
+          topP: 0.9,
+          maxOutputTokens: 512,
+        },
+      }),
+    });
+
+    if (!geminiResponse.ok) {
+      const errText = await geminiResponse.text();
+      console.error('Gemini API error:', errText);
+      return NextResponse.json({ error: 'Gemini API request failed.', details: errText }, { status: 502 });
     }
+
+    const geminiData = await geminiResponse.json();
+    const rawText = geminiData?.candidates?.[0]?.content?.parts?.[0]?.text || '';
+
+    // Parse JSON from Gemini response (strip any accidental markdown fences)
+    let cleanText = rawText.trim().replace(/^```(?:json)?/i, '').replace(/```$/, '').trim();
+
+    let parsed;
+    try {
+      parsed = JSON.parse(cleanText);
+    } catch {
+      console.error('Failed to parse Gemini JSON:', rawText);
+      return NextResponse.json({
+        error: 'AI returned an unreadable response.',
+        details: rawText.slice(0, 300),
+      }, { status: 500 });
+    }
+
+    if (!parsed.detected) {
+      return NextResponse.json({
+        success: false,
+        error: `AI could not detect a product. ${parsed.reason || ''}`.trim(),
+      });
+    }
+
+    // Validate category
+    const finalCategory = CATEGORY_LIST.includes(parsed.category)
+      ? parsed.category
+      : 'Other';
 
     return NextResponse.json({
       success: true,
       product: {
-        ...detectedProduct,
+        name: parsed.name || 'Unknown Product',
+        brandName: parsed.brandName || 'Unknown Brand',
+        category: finalCategory,
+        price: Number(parsed.price) || 0,
+        image: image.startsWith('http') ? image : '',
         inStock: true,
-        isMostSelling: true,
+        isMostSelling: false,
       },
-      confidence: 0.98,
-      source: "Google Vision & Shopping API (Simulated)"
+      confidence: parsed.confidence || 0.9,
+      source: 'Gemini 1.5 Flash Vision AI',
     });
+
   } catch (error) {
-    console.error("AI Detection Error:", error);
-    return NextResponse.json({ error: 'AI processing failed', details: error.message }, { status: 500 });
+    console.error('AI Detection Error:', error);
+    return NextResponse.json({ error: 'AI processing failed.', details: error.message }, { status: 500 });
   }
 }
