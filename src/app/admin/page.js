@@ -7,6 +7,7 @@ export default function AdminPage() {
   const [password, setPassword] = useState("");
   const [products, setProducts] = useState([]);
   const [editingProduct, setEditingProduct] = useState(null);
+  const [isAiScanning, setIsAiScanning] = useState(false);
 
   useEffect(() => {
     if (isLoggedIn) {
@@ -66,6 +67,46 @@ export default function AdminPage() {
     }
   };
 
+  const handleAiDetect = async (fileOrUrl, fileName) => {
+    setIsAiScanning(true);
+    try {
+      const res = await fetch("/api/ai-detect", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ image: fileOrUrl, fileName }),
+      });
+      const data = await res.json();
+      if (data.success) {
+        setEditingProduct((prev) => ({
+          ...prev,
+          name: data.product.name || prev.name,
+          brandName: data.product.brandName || prev.brandName,
+          category: data.product.category || prev.category,
+          price: data.product.price || prev.price,
+          image: data.product.image || prev.image,
+          inStock: data.product.inStock ?? prev.inStock,
+          isMostSelling: data.product.isMostSelling ?? prev.isMostSelling,
+        }));
+        alert(`✨ AI Fetched Details from Google Vision & Shopping!\nProduct: ${data.product.name}\nConfidence: ${data.confidence * 100}%`);
+      } else {
+        alert("AI Detection failed: " + data.error);
+      }
+    } catch (err) {
+      alert("Error calling AI service: " + err.message);
+    } finally {
+      setIsAiScanning(false);
+    }
+  };
+
+  const handleFileUpload = (e) => {
+    const file = e.target.files?.[0];
+    if (!file) return;
+
+    const fileUrl = URL.createObjectURL(file);
+    setEditingProduct((prev) => ({ ...prev, image: fileUrl }));
+    handleAiDetect(fileUrl, file.name);
+  };
+
   if (!isLoggedIn) {
     return (
       <div className="liquid-glass animate-fade-in" style={{ maxWidth: '400px', margin: '100px auto', textAlign: 'center' }}>
@@ -107,6 +148,74 @@ export default function AdminPage() {
           <h2 style={{ marginBottom: '24px' }}>
             {products.some(p => p.id === editingProduct.id) ? `Editing: ${editingProduct.name}` : "Create New Product"}
           </h2>
+
+          {/* AI Feature Box */}
+          <div style={{
+            background: 'linear-gradient(135deg, rgba(99,102,241,0.15), rgba(139,92,246,0.15))',
+            border: '1px solid rgba(139,92,246,0.4)',
+            borderRadius: '12px',
+            padding: '20px',
+            marginBottom: '28px',
+            boxShadow: '0 4px 20px rgba(139,92,246,0.15)'
+          }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '12px' }}>
+              <span style={{ fontSize: '1.4rem' }}>✨</span>
+              <h3 style={{ fontSize: '1.1rem', fontWeight: 700, color: '#c084fc' }}>AI Product Auto-Fetch (Google Vision & Shopping)</h3>
+            </div>
+            <p style={{ fontSize: '0.88rem', color: '#cbd5e1', marginBottom: '16px' }}>
+              Click a picture of the product or upload an image. The AI will instantly detect the product, fetch its brand, category, and market price from Google.
+            </p>
+
+            <div style={{ display: 'flex', gap: '16px', alignItems: 'center', flexWrap: 'wrap' }}>
+              <label style={{
+                background: 'linear-gradient(135deg, #8b5cf6, #6366f1)',
+                color: 'white',
+                padding: '10px 20px',
+                borderRadius: '8px',
+                fontWeight: 600,
+                cursor: 'pointer',
+                display: 'inline-flex',
+                alignItems: 'center',
+                gap: '8px',
+                boxShadow: '0 4px 12px rgba(139,92,246,0.3)'
+              }}>
+                📸 Take Picture / Upload Image
+                <input type="file" accept="image/*" capture="environment" onChange={handleFileUpload} style={{ display: 'none' }} />
+              </label>
+
+              {editingProduct?.image && !isAiScanning && (
+                <button
+                  type="button"
+                  onClick={() => handleAiDetect(editingProduct.image, 'custom-url')}
+                  style={{
+                    background: 'transparent',
+                    border: '1px solid #c084fc',
+                    color: '#c084fc',
+                    padding: '10px 20px',
+                    borderRadius: '8px',
+                    fontWeight: 600,
+                    cursor: 'pointer',
+                  }}
+                >
+                  ⚡ Fetch from Image URL
+                </button>
+              )}
+
+              {isAiScanning && (
+                <div style={{ display: 'flex', alignItems: 'center', gap: '12px', color: '#60a5fa', fontWeight: 600 }}>
+                  <div className="ai-spinner" style={{
+                    width: '20px', height: '20px',
+                    border: '3px solid rgba(96,165,250,0.3)',
+                    borderTopColor: '#60a5fa',
+                    borderRadius: '50%',
+                    animation: 'spin 1s linear infinite'
+                  }} />
+                  Scanning product via Google AI...
+                </div>
+              )}
+            </div>
+          </div>
+
           <form onSubmit={handleSave} style={{ display: 'grid', gap: '20px', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))' }}>
             
             <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
